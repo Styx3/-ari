@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scene_root"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        android:background="@color/peach_puff"
+        tools:context=".LoginActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="bottom|center"
+            android:id="@+id/Logo"
+            android:layout_gravity="center"
+            android:textSize="75dp"
+            android:textColor="@color/dark_green"
+            android:text="₾"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+
+
+        <EditText android:layout_width="250dp"
+                  android:id="@+id/UserR"
+                  android:inputType="phone"
+                  android:hint="Phone"
+                  android:textColorHint="@color/green"
+                  android:layout_gravity="center"
+                  android:layout_height="wrap_content"/>
+    <EditText android:layout_width="250dp"
+              android:inputType="textPassword"
+              android:id="@+id/PasswR"
+              android:hint="Password"
+              android:textColorHint="@color/green"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content"/>
+        <EditText android:layout_width="250dp"
+                  android:inputType="text"
+                  android:id="@+id/EmailR"
+                  android:hint="E-mail"
+                  android:textColorHint="@color/green"
+                  android:layout_gravity="center"
+                  android:layout_height="wrap_content"/>
+    <EditText android:layout_width="250dp"
+              android:id="@+id/NicknameR"
+              android:inputType="text"
+              android:hint="Nickname"
+              android:textColorHint="@color/green"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content"/>
+</LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_weight="3.9"
+    android:gravity="center">
+
+
+        <Button android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/RegisterButtonR"
+                android:textColor="@color/green"
+                android:background="@color/peach_puff_dark"
+                android:textAllCaps="false"
+                android:text="Register"/>
+    </LinearLayout>
+</LinearLayout>
